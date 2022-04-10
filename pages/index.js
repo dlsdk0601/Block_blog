@@ -1,7 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import { useRecoilState } from "recoil";
+import Nav from "../components/index/Nav";
+import { darkMode } from "../state/atom";
 
 export default function Home() {
-  return <div>ddd</div>;
+  const [state, setState] = useRecoilState(darkMode);
+
+  const darkModeHandle = () => {
+    setState((prev) => !prev);
+  };
+
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }

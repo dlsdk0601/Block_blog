@@ -1,9 +1,15 @@
 export const lightTheme = {
-  bgColor: "white",
-  textColor: "rgb(47, 54, 64)",
+  ctColor: "white",
+  textColor: "#1f295a",
+  bgColor: "#cfd1dd",
+  ctBgColor: "white",
+  menuBgColor: "#4c547b",
 };
 
 export const darkTheme = {
+  ctColor: "white",
   textColor: "white",
-  bgColor: "rgb(47, 54, 64)",
+  bgColor: "#cfd1dd",
+  ctBgColor: "#1f295a",
+  menuBgColor: "#4c547b",
 };
